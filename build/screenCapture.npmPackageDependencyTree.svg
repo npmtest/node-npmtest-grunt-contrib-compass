@@ -1,0 +1,67 @@
+<svg height="1022" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1022" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">3 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">├── UNMET PEER DEPENDENCY grunt@&gt;= 0.4.5</tspan>
+<tspan x="10" y="90">└─┬ grunt-contrib-compass@1.1.1 </tspan>
+<tspan x="10" y="106">  ├── async@1.5.2 </tspan>
+<tspan x="10" y="122">  ├─┬ bin-version-check@2.1.0 </tspan>
+<tspan x="10" y="138">  │ ├─┬ bin-version@1.0.4 </tspan>
+<tspan x="10" y="154">  │ │ └─┬ find-versions@1.2.1 </tspan>
+<tspan x="10" y="170">  │ │   ├── array-uniq@1.0.3 </tspan>
+<tspan x="10" y="186">  │ │   ├── get-stdin@4.0.1 </tspan>
+<tspan x="10" y="202">  │ │   ├─┬ meow@3.7.0 </tspan>
+<tspan x="10" y="218">  │ │   │ ├─┬ camelcase-keys@2.1.0 </tspan>
+<tspan x="10" y="234">  │ │   │ │ └── camelcase@2.1.1 </tspan>
+<tspan x="10" y="250">  │ │   │ ├── decamelize@1.2.0 </tspan>
+<tspan x="10" y="266">  │ │   │ ├─┬ loud-rejection@1.6.0 </tspan>
+<tspan x="10" y="282">  │ │   │ │ ├─┬ currently-unhandled@0.4.1 </tspan>
+<tspan x="10" y="298">  │ │   │ │ │ └── array-find-index@1.0.2 </tspan>
+<tspan x="10" y="314">  │ │   │ │ └── signal-exit@3.0.2 </tspan>
+<tspan x="10" y="330">  │ │   │ ├── map-obj@1.0.1 </tspan>
+<tspan x="10" y="346">  │ │   │ ├─┬ normalize-package-data@2.3.6 </tspan>
+<tspan x="10" y="362">  │ │   │ │ ├── hosted-git-info@2.4.1 </tspan>
+<tspan x="10" y="378">  │ │   │ │ ├─┬ is-builtin-module@1.0.0 </tspan>
+<tspan x="10" y="394">  │ │   │ │ │ └── builtin-modules@1.1.1 </tspan>
+<tspan x="10" y="410">  │ │   │ │ └─┬ validate-npm-package-license@3.0.1 </tspan>
+<tspan x="10" y="426">  │ │   │ │   ├─┬ spdx-correct@1.0.2 </tspan>
+<tspan x="10" y="442">  │ │   │ │   │ └── spdx-license-ids@1.2.2 </tspan>
+<tspan x="10" y="458">  │ │   │ │   └── spdx-expression-parse@1.0.4 </tspan>
+<tspan x="10" y="474">  │ │   │ ├── object-assign@4.1.1 </tspan>
+<tspan x="10" y="490">  │ │   │ ├─┬ read-pkg-up@1.0.1 </tspan>
+<tspan x="10" y="506">  │ │   │ │ ├─┬ find-up@1.1.2 </tspan>
+<tspan x="10" y="522">  │ │   │ │ │ ├── path-exists@2.1.0 </tspan>
+<tspan x="10" y="538">  │ │   │ │ │ └─┬ pinkie-promise@2.0.1 </tspan>
+<tspan x="10" y="554">  │ │   │ │ │   └── pinkie@2.0.4 </tspan>
+<tspan x="10" y="570">  │ │   │ │ └─┬ read-pkg@1.1.0 </tspan>
+<tspan x="10" y="586">  │ │   │ │   ├─┬ load-json-file@1.1.0 </tspan>
+<tspan x="10" y="602">  │ │   │ │   │ ├── graceful-fs@4.1.11 </tspan>
+<tspan x="10" y="618">  │ │   │ │   │ ├─┬ parse-json@2.2.0 </tspan>
+<tspan x="10" y="634">  │ │   │ │   │ │ └─┬ error-ex@1.3.1 </tspan>
+<tspan x="10" y="650">  │ │   │ │   │ │   └── is-arrayish@0.2.1 </tspan>
+<tspan x="10" y="666">  │ │   │ │   │ ├── pify@2.3.0 </tspan>
+<tspan x="10" y="682">  │ │   │ │   │ └─┬ strip-bom@2.0.0 </tspan>
+<tspan x="10" y="698">  │ │   │ │   │   └── is-utf8@0.2.1 </tspan>
+<tspan x="10" y="714">  │ │   │ │   └── path-type@1.1.0 </tspan>
+<tspan x="10" y="730">  │ │   │ ├─┬ redent@1.0.0 </tspan>
+<tspan x="10" y="746">  │ │   │ │ ├─┬ indent-string@2.1.0 </tspan>
+<tspan x="10" y="762">  │ │   │ │ │ └─┬ repeating@2.0.1 </tspan>
+<tspan x="10" y="778">  │ │   │ │ │   └─┬ is-finite@1.0.2 </tspan>
+<tspan x="10" y="794">  │ │   │ │ │     └── number-is-nan@1.0.1 </tspan>
+<tspan x="10" y="810">  │ │   │ │ └── strip-indent@1.0.1 </tspan>
+<tspan x="10" y="826">  │ │   │ └── trim-newlines@1.0.0 </tspan>
+<tspan x="10" y="842">  │ │   └── semver-regex@1.0.0 </tspan>
+<tspan x="10" y="858">  │ ├── minimist@1.2.0 </tspan>
+<tspan x="10" y="874">  │ ├── semver@4.3.6 </tspan>
+<tspan x="10" y="890">  │ └─┬ semver-truncate@1.1.2 </tspan>
+<tspan x="10" y="906">  │   └── semver@5.3.0 </tspan>
+<tspan x="10" y="922">  ├── dargs@2.1.0 </tspan>
+<tspan x="10" y="938">  ├── onetime@1.1.0 </tspan>
+<tspan x="10" y="954">  ├─┬ tmp@0.0.28 </tspan>
+<tspan x="10" y="970">  │ └── os-tmpdir@1.0.2 </tspan>
+<tspan x="10" y="986">  └─┬ which@1.2.14 </tspan>
+<tspan x="10" y="1002">    └── isexe@2.0.0</tspan>
+</text>
+</svg>
