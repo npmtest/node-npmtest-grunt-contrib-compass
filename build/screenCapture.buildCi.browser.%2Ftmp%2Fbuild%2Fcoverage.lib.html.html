@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-grunt-contrib-compass/grunt-contrib-compass/tasks/compass.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-grunt-contrib-compass/node_modules/grunt-contrib-compass/tasks/compass.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-grunt-contrib-compass">npmtest-grunt-contrib-compass (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-grunt-contrib-compass/grunt-contrib-compass/tasks/compass.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-grunt-contrib-compass/node_modules/grunt-contrib-compass/tasks/compass.js</span></h1>
     <h2>
         
         Statements: <span class="metric">8.82% <small>(3 / 34)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-grunt-contrib-compass/grunt-contrib-compass/tasks/</a> &#187; compass.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> » <a href="index.html">node-npmtest-grunt-contrib-compass/node_modules/grunt-contrib-compass/tasks/</a> » compass.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -401,17 +399,17 @@
 'use strict';
 var binVersionCheck = require('bin-version-check');
 &nbsp;
-module.exports = <span class="fstat-no" title="function not covered" >function (grunt) {</span>
-<span class="cstat-no" title="statement not covered" >  var compass = require('./lib/compass').init(grunt);</span>
+module.exports = <span class="fstat-no" title="function not covered">function (grunt) {</span>
+<span class="cstat-no" title="statement not covered">  var compass = require('./lib/compass').init(grunt);</span>
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function compile(args, cb) {</span>
-<span class="cstat-no" title="statement not covered" >    grunt.log.verbose.writeln('Running command: ' + args.join(' '));</span>
-<span class="cstat-no" title="statement not covered" >    var child = grunt.util.spawn({</span>
+<span class="fstat-no" title="function not covered">  function compile(args, cb) {</span>
+<span class="cstat-no" title="statement not covered">    grunt.log.verbose.writeln('Running command: ' + args.join(' '));</span>
+<span class="cstat-no" title="statement not covered">    var child = grunt.util.spawn({</span>
       cmd: args.shift(),
       args: args
-    }, <span class="fstat-no" title="function not covered" >function (err, result, code) {</span>
-<span class="cstat-no" title="statement not covered" >      if (code === 127) {</span>
-<span class="cstat-no" title="statement not covered" >        grunt.warn(</span>
+    }, <span class="fstat-no" title="function not covered">function (err, result, code) {</span>
+<span class="cstat-no" title="statement not covered">      if (code === 127) {</span>
+<span class="cstat-no" title="statement not covered">        grunt.warn(</span>
           'You need to have Ruby and Compass installed ' +
           'and in your system PATH for this task to work. ' +
           'More info: https://github.com/gruntjs/grunt-contrib-compass'
@@ -422,56 +420,56 @@ module.exports = <span class="fstat-no" title="function not covered" >function (
       // on stderr when it has nothing to compile.
       // https://github.com/chriseppstein/compass/issues/993
       // Don't fail the task in this situation.
-<span class="cstat-no" title="statement not covered" >      if (code === 1 &amp;&amp; !/Nothing to compile|Compass can't find any Sass files to compile/g.test(result.stderr)) {</span>
-<span class="cstat-no" title="statement not covered" >        grunt.warn('↑');</span>
+<span class="cstat-no" title="statement not covered">      if (code === 1 &amp;&amp; !/Nothing to compile|Compass can't find any Sass files to compile/g.test(result.stderr)) {</span>
+<span class="cstat-no" title="statement not covered">        grunt.warn('↑');</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      cb();</span>
+<span class="cstat-no" title="statement not covered">      cb();</span>
     });
-<span class="cstat-no" title="statement not covered" >    if (child) {</span>
-<span class="cstat-no" title="statement not covered" >      child.stdout.pipe(process.stdout);</span>
-<span class="cstat-no" title="statement not covered" >      child.stderr.pipe(process.stderr);</span>
+<span class="cstat-no" title="statement not covered">    if (child) {</span>
+<span class="cstat-no" title="statement not covered">      child.stdout.pipe(process.stdout);</span>
+<span class="cstat-no" title="statement not covered">      child.stderr.pipe(process.stderr);</span>
     }
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  grunt.registerMultiTask('compass', 'Compile Sass to CSS using Compass', <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >    var options = this.options();</span>
-<span class="cstat-no" title="statement not covered" >    var cb = this.async();</span>
+<span class="cstat-no" title="statement not covered">  grunt.registerMultiTask('compass', 'Compile Sass to CSS using Compass', <span class="fstat-no" title="function not covered">function () {</span></span>
+<span class="cstat-no" title="statement not covered">    var options = this.options();</span>
+<span class="cstat-no" title="statement not covered">    var cb = this.async();</span>
 &nbsp;
     // display compilation time
-<span class="cstat-no" title="statement not covered" >    if (!options.clean) {</span>
-<span class="cstat-no" title="statement not covered" >      options.time = true;</span>
+<span class="cstat-no" title="statement not covered">    if (!options.clean) {</span>
+<span class="cstat-no" title="statement not covered">      options.time = true;</span>
     }
 &nbsp;
     // create a function to retroactively add a banner to the top of the
     // generated files, if specified
-<span class="cstat-no" title="statement not covered" >    var bannerCallback = compass.buildBannerCallback(grunt, options);</span>
+<span class="cstat-no" title="statement not covered">    var bannerCallback = compass.buildBannerCallback(grunt, options);</span>
     // create a temporary config file if there are 'raw' options or
     // settings not supported as CLI arguments
-<span class="cstat-no" title="statement not covered" >    var configContext = compass.buildConfigContext(options);</span>
+<span class="cstat-no" title="statement not covered">    var configContext = compass.buildConfigContext(options);</span>
     // get the array of arguments for the compass command
-<span class="cstat-no" title="statement not covered" >    var args = compass.buildArgsArray(options);</span>
+<span class="cstat-no" title="statement not covered">    var args = compass.buildArgsArray(options);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    configContext(<span class="fstat-no" title="function not covered" >function (err, path) {</span></span>
-<span class="cstat-no" title="statement not covered" >      if (err) {</span>
-<span class="cstat-no" title="statement not covered" >        grunt.warn(err);</span>
+<span class="cstat-no" title="statement not covered">    configContext(<span class="fstat-no" title="function not covered">function (err, path) {</span></span>
+<span class="cstat-no" title="statement not covered">      if (err) {</span>
+<span class="cstat-no" title="statement not covered">        grunt.warn(err);</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      if (path) {</span>
+<span class="cstat-no" title="statement not covered">      if (path) {</span>
         // add `--config` path arguments before `--` option-argument separator if one exists,
         // otherwise add to the end
-<span class="cstat-no" title="statement not covered" >        var doubleDashIdx = args.indexOf('--');</span>
-<span class="cstat-no" title="statement not covered" >        args.splice(doubleDashIdx === -1 ? args.length : doubleDashIdx, 0, '--config', path);</span>
+<span class="cstat-no" title="statement not covered">        var doubleDashIdx = args.indexOf('--');</span>
+<span class="cstat-no" title="statement not covered">        args.splice(doubleDashIdx === -1 ? args.length : doubleDashIdx, 0, '--config', path);</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      binVersionCheck(args[0], '&gt;=0.12.2', <span class="fstat-no" title="function not covered" >function (err) {</span></span>
-<span class="cstat-no" title="statement not covered" >        if (err) {</span>
-<span class="cstat-no" title="statement not covered" >          grunt.warn(err);</span>
+<span class="cstat-no" title="statement not covered">      binVersionCheck(args[0], '&gt;=0.12.2', <span class="fstat-no" title="function not covered">function (err) {</span></span>
+<span class="cstat-no" title="statement not covered">        if (err) {</span>
+<span class="cstat-no" title="statement not covered">          grunt.warn(err);</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        compile(args, <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >          bannerCallback();</span>
-<span class="cstat-no" title="statement not covered" >          cb();</span>
+<span class="cstat-no" title="statement not covered">        compile(args, <span class="fstat-no" title="function not covered">function () {</span></span>
+<span class="cstat-no" title="statement not covered">          bannerCallback();</span>
+<span class="cstat-no" title="statement not covered">          cb();</span>
         });
       });
     });
@@ -479,10 +477,11 @@ module.exports = <span class="fstat-no" title="function not covered" >function (
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 17:11:36 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 19 2017 18:36:02 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
